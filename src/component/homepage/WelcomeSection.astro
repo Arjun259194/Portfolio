@@ -1,15 +1,26 @@
 ---
 ---
 
-<section class="min-h-[80vh] flex justify-center items-center py-5">
-  <div class="w-10/12 mx-auto lg:grid lg:grid-cols-2 lg:gap-8 lg:place-items-center">
+<section class="min-h-[80vh] flex justify-center relative items-center py-5 md:py-10">
+  <img
+    class="absolute aspect-square w-96 animate-spin-slow rounded-full opacity-50 top-0 left-0"
+    src="/img/JS-logo.png"
+    alt="JS-logo"
+  />
+  <img
+    class="absolute w-96 animate-spin-slow-reverse opacity-50 bottom-0 right-0"
+    src="/img/Node-logo.png"
+    alt="JS-logo"
+  />
+  <div
+    class="w-10/12 mx-auto relative z-10 lg:grid lg:grid-cols-2 lg:gap-8 lg:place-items-center">
     <img
-      class="p-5 my-5 lg:m-0 border-2 border-black rounded-3xl"
+      class="p-5 my-5 bg-white/50 backdrop-blur-md lg:m-0 border-2 border-black rounded-3xl"
       src="/svg/art1.svg"
       alt="svg art"
     />
     <div
-      class="text-sm md:text-base md:px-2 font-semibold text-center md:text-start space-y-4">
+      class="text-sm md:text-base bg-white/50 backdrop-blur-md border-2 border-black rounded-md p-2 md:px-2 font-semibold text-center md:text-start space-y-4">
       <p>
         Hey there and welcome to my little corner of the internet! My name is Arjun R.
         Mistry, and I'm a full-stack web developer with a passion for helping small
@@ -53,7 +64,8 @@
 </section>
 
 <style>
-  section div img {
+  section div img,
+  section div div {
     box-shadow: 8px 8px 0 black;
   }
 

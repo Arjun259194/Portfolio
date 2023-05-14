@@ -1,0 +1,22 @@
+---
+import Markdown from "../../component/Markdown.astro";
+import { fetchBlog, fetchBlogs } from "../../database/helper";
+import Layout from "../../layout/Layout.astro";
+export async function getStaticPaths() {
+  const blogs = await fetchBlogs();
+  const returnVal = blogs.map(blog => {
+    return {
+      params: { id: blog._id.toString() },
+    };
+  });
+
+  return returnVal;
+}
+const { id } = Astro.params;
+
+const blog = await fetchBlog(id);
+---
+
+<Layout title={blog.title}>
+  <Markdown content={blog.content} />
+</Layout>

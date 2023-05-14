@@ -1,0 +1,12 @@
+---
+import { renderMarkdown } from "../utils/render";
+
+interface Props {
+  content: string;
+}
+const { content } = Astro.props;
+
+const html = renderMarkdown(content);
+---
+
+<div class="space-y-4 w-9/12 mx-auto pt-5" set:html={html} />
