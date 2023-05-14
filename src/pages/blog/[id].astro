@@ -2,6 +2,7 @@
 import Markdown from "../../component/Markdown.astro";
 import { fetchBlog, fetchBlogs } from "../../database/helper";
 import Layout from "../../layout/Layout.astro";
+
 export async function getStaticPaths() {
   const blogs = await fetchBlogs();
   const returnVal = blogs.map(blog => {

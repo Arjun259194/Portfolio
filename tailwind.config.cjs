@@ -9,8 +9,8 @@ module.exports = {
 				'spin-slow-reverse': 'spin 20s linear infinite reverse',
 			},
 			boxShadow: {
-				"comic-light": "8px 8px 0 black",
-				"comic-dark": "8px 8px 0 white"
+				"comic-light": "6px 6px 0 black",
+				"comic-dark": "6px 6px 0 white"
 			}
 		},
 	},
