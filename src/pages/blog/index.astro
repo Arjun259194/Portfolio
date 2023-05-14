@@ -7,11 +7,11 @@ console.log(blogs);
 
 <Layout title="Blogs">
   <main class="min-h-[80vh]">
-    <section class="w-3/4 mx-auto space-y-6 py-10">
+    <section class="w-3/4 mx-auto space-y-8 py-10">
       {
         blogs.map(blog => {
           return (
-            <article class=" p-2 border-2 border-black rounded-md">
+            <article class=" p-2 border-2 border-black dark:border-white shadow-comic-light dark:shadow-comic-dark rounded-md">
               <a href={`/blog/${blog._id}`}>
                 <h2 class="text-2xl capitalize hover:underline hover:underline-offset-2">
                   {blog.title}
@@ -24,9 +24,3 @@ console.log(blogs);
     </section>
   </main>
 </Layout>
-
-<style>
-  main section article {
-    box-shadow: 5px 5px 0 black;
-  }
-</style>

@@ -13,11 +13,11 @@ function styleHtml(html: string) {
     .replaceAll("<h6>", `<h6 class="${commonHeadingStyle} text-base md:text-xl ">`)
     .replaceAll(
       "<code>",
-      `<code class="font-mono bg-gray-100 border border-gray-200 rounded-md py-1 px-2 font-normal">`
+      `<code class="font-mono bg-gray-100 dark:bg-gray-800 border border-gray-200 rounded-md py-1 px-2 font-normal">`
     )
     .replaceAll(
       "<pre>",
-      '<pre class="bg-gray-50 p-2 rounded-md border-2 border-gray-200">'
+      '<pre class="bg-gray-50 dark:bg-gray-800 p-2 rounded-md border-2 border-gray-200">'
     );
 }
 

@@ -8,9 +8,9 @@ import { projects } from "../../utils/projects";
     {
       projects.map(({ title, link, image, about, subTitle }) => {
         return (
-          <article class="border-2 overflow-hidden p-2 border-black rounded-md">
+          <article class="border-2 overflow-hidden p-2 border-black dark:border-white shadow-comic-light dark:shadow-comic-dark rounded-md">
             <img class="w-full rounded-md" src={image} alt="" />
-            <div class="space-y-1 my-2 capitalize text-gray-900">
+            <div class="space-y-1 my-2 capitalize text-gray-900 dark:text-gray-100">
               <a target="_blank" href={link}>
                 <h3 class="text-2xl font-semibold hover:underline hover:underline-offset-2">
                   {title}
@@ -25,13 +25,9 @@ import { projects } from "../../utils/projects";
     }
   </div>
   <p class="text-xl text-center capitalize">
-    Visit <a class="underline underline-offset-2 text-blue-700" href="/project">project</a
+    Visit <a
+      class="underline underline-offset-2 text-blue-700 dark:text-blue-400 font-semibold"
+      href="/project">project</a
     > page to see in detail
   </p>
 </section>
-
-<style>
-  section div article {
-    box-shadow: 8px 8px 0 black;
-  }
-</style>

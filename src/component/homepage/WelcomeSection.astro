@@ -15,12 +15,12 @@
   <div
     class="w-10/12 mx-auto relative z-10 lg:grid lg:grid-cols-2 lg:gap-8 lg:place-items-center">
     <img
-      class="p-5 my-5 bg-white/50 backdrop-blur-md lg:m-0 border-2 border-black rounded-3xl"
+      class="p-5 my-5 bg-white/20 dark:bg-gray-900/20 backdrop-blur-md lg:m-0 border-2 border-black dark:border-white shadow-comic-light dark:shadow-comic-dark rounded-3xl"
       src="/svg/art1.svg"
       alt="svg art"
     />
     <div
-      class="text-sm md:text-base bg-white/50 backdrop-blur-md border-2 border-black rounded-md p-2 md:px-2 font-semibold text-center md:text-start space-y-4">
+      class="text-sm md:text-base bg-white/20 dark:bg-gray-900/20 backdrop-blur-md border-2 border-black dark:border-white shadow-comic-light dark:shadow-comic-dark rounded-md p-2 md:px-2 font-semibold text-center md:text-start space-y-4">
       <p>
         Hey there and welcome to my little corner of the internet! My name is Arjun R.
         Mistry, and I'm a full-stack web developer with a passion for helping small
@@ -35,8 +35,8 @@
           >CSS</span
         >, <span class="text-pink-500">SCSS</span>, <span class="text-blue-400"
           >React.js</span
-        >, <span class="text-gray-800">Next.js</span>, <span class="text-orange-500"
-          >Astro</span
+        >, <span class="text-gray-800 dark:text-gray-300">Next.js</span>, <span
+          class="text-orange-500">Astro</span
         >, and <span class="text-green-500">MongoDB</span> database, but I won't bore you with
         the technical jargon. Instead, I'll work with you to understand your unique needs and
         create a website that reflects your business's personality and values.
@@ -55,22 +55,10 @@
       </p>
       <p>
         You can see the <a
-          class="capitalize font-bold text-blue-700 underline underline-offset-2"
+          class="capitalize font-bold text-blue-700 dark:text-blue-400 underline underline-offset-2"
           href="/about">about</a
         > page for more information
       </p>
     </div>
   </div>
 </section>
-
-<style>
-  section div img,
-  section div div {
-    box-shadow: 8px 8px 0 black;
-  }
-
-  section div div p span {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-</style>
