@@ -1,7 +1,7 @@
 ---
 ---
 
-<section class="relative overflow-hidden">
+<section class="relative">
   <img
     class="h-96 absolute z-0 animate-spin-slow opacity-50"
     src="/img/React-logo.png"
@@ -13,12 +13,14 @@
     alt="ts-logo"
   />
   <div
+    id="card"
     class="flex flex-col w-10/12 mx-auto text-gray-900 z-10 relative text-center min-h-[80vh] justify-center items-center space-y-6">
-    <h1 class="main-title text-8xl font-bold">Hey! I'm Arjun</h1>
-    <h2 class="text-4xl font-semibold capitalize">
+    <h1 class="main-title md:text-8xl text-6xl font-bold">Hey! I'm Arjun</h1>
+    <h2 class="md:text-4xl text-3xl font-semibold capitalize">
       Welcome to my little corner of the internet!
     </h2>
-    <p class="w-3/6 capitalize">
+    <p
+      class="md:w-4/6 w-11/12 capitalize text-sm md:text-lg font-semibold md:font-normal text-gray-800">
       From front-end design to back-end development, I bring your digital ideas to life
       with clean, functional code and stunning designs. With years of experience and a
       passion for innovation, I help businesses and individuals succeed online with custom
@@ -28,7 +30,7 @@
 
   <div class="flex justify-center py-2">
     <span
-      class="bounce-btn border-2 animate-bounce border-black p-2 aspect-square rounded-full">
+      class="btn border-2 animate-bounce bg-white border-black p-2 aspect-square rounded-full">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -46,7 +48,7 @@
 </section>
 
 <style>
-  .bounce-btn {
+  section div span.btn {
     box-shadow: 5px 5px 0 black;
   }
 </style>

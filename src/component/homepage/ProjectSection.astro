@@ -1,0 +1,37 @@
+---
+import { projects } from "../../utils/projects";
+---
+
+<section class="py-5 space-y-6">
+  <h1 class="text-5xl capitalize text-center">Some of my projects</h1>
+  <div class="p-5 space-y-4 lg:flex lg:space-y-0 lg:space-x-6">
+    {
+      projects.map(({ title, link, image, about, subTitle }) => {
+        return (
+          <article class="border-2 overflow-hidden p-1 border-black rounded-md">
+            <img class="w-full rounded-md" src={image} alt="" />
+            <div class="space-y-1 my-2 capitalize text-gray-900">
+              <a target="_blank" href={link}>
+                <h3 class="text-2xl font-semibold hover:underline hover:underline-offset-2">
+                  {title}
+                </h3>
+              </a>
+              <h4 class="text-lg">{subTitle}</h4>
+              <p class="text-sm">{about}</p>
+            </div>
+          </article>
+        );
+      })
+    }
+  </div>
+  <p class="text-xl text-center capitalize">
+    Visit <a class="underline underline-offset-2 text-blue-700" href="/project">project</a
+    > page to see in detail
+  </p>
+</section>
+
+<style>
+  section div article {
+    box-shadow: 8px 8px 0 black;
+  }
+</style>
