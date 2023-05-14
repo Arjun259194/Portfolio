@@ -2,12 +2,19 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     setMenuOpen(window.innerWidth > 768);
   }, []);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle("dark");
+  };
+
   return (
     <header className="w-full flex md:justify-center justify-end relative pt-5">
       <nav className="">
@@ -32,6 +39,9 @@ const Header = () => {
           </li>
           <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900  text-lg">
             <a href="/contact">contact</a>
+          </li>
+          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900  text-lg">
+            <button onClick={toggleTheme}>Theme Switch</button>
           </li>
         </ul>
         <button onClick={toggleMenu} className="mx-2 p-2 md:hidden">
