@@ -1,4 +1,3 @@
-import { Document } from "mongodb";
 
 export interface Project {
   title: string;
@@ -6,9 +5,4 @@ export interface Project {
   image: string;
   link: string;
   about: string;
-}
-
-export interface Blog extends Document {
-  title: string;
-  content: string;
 }

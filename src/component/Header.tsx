@@ -11,9 +11,9 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const toggleTheme = () => {
-    document.documentElement.classList.toggle("dark");
-  };
+  // const toggleTheme = () => {
+  //   document.documentElement.classList.toggle("dark");
+  // };
 
   return (
     <header className="w-full flex md:justify-center justify-end relative pt-5">
@@ -21,7 +21,7 @@ const Header = () => {
         <ul
           className={`${
             menuOpen ? "opacity-100 -translate-y-0" : "opacity-0 -translate-y-full"
-          } overflow-hidden transition-all duration-200 ease-linear md:flex md:space-x-8 md:relative md:m-0 font-semibold absolute z-20 bg-white dark:bg-gray-900 border-2 border-black dark:border-gray-100 shadow-comic-light dark:shadow-comic-dark rounded-md top-0 right-0 m-12 capitalize text-gray-900 dark:text-gray-100`}>
+          } overflow-hidden transition-all duration-200 ease-linear md:flex md:space-x-8 md:relative md:m-0 font-semibold absolute z-20 bg-white dark:bg-neutral-900 border-2 border-black dark:border-gray-100 shadow-comic-light dark:shadow-comic-dark rounded-md top-0 right-0 m-12 capitalize text-gray-900 dark:text-gray-100`}>
           <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
             <a href="/">Home</a>
           </li>
@@ -37,9 +37,9 @@ const Header = () => {
           <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
             <a href="/contact">contact</a>
           </li>
-          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
+          {/* <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
             <button onClick={toggleTheme}>Theme Switch</button>
-          </li>
+          </li> */}
         </ul>
         <button onClick={toggleMenu} className="mx-2 p-2 md:hidden">
           <svg

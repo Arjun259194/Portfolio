@@ -6,7 +6,7 @@ import { projects } from "../../utils/projects";
   <h1 class="text-5xl capitalize text-center">Some of my projects</h1>
   <div class="p-5 space-y-4 lg:flex lg:space-y-0 lg:space-x-6">
     {
-      projects.map(({ title, link, image, about, subTitle }) => {
+      projects.map(({ title, link, image }) => {
         return (
           <article class="border-2 overflow-hidden p-2 border-black dark:border-white shadow-comic-light dark:shadow-comic-dark rounded-md">
             <img class="w-full rounded-md" src={image} alt="" />
@@ -16,8 +16,6 @@ import { projects } from "../../utils/projects";
                   {title}
                 </h3>
               </a>
-              <h4 class="text-lg">{subTitle}</h4>
-              <p class="text-sm">{about}</p>
             </div>
           </article>
         );

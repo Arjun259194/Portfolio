@@ -1,0 +1,30 @@
+---
+import Layout from "../../layout/Layout.astro";
+import { projects } from "../../utils/projects";
+---
+
+<Layout title="Projects">
+  <main class="space-y-10 py-10">
+    {
+      projects.map(project => {
+        return (
+          <section class="p-2 rounded-md border-2 border-black dark:border-white shadow-comic-light dark:shadow-comic-dark md:flex md:justify-between md:even:flex-row-reverse w-10/12 mx-auto">
+            <img
+              class="md:min-w-[50%] w-full border-2 border-gray-300 rounded-md"
+              src={project.image}
+            />
+            <div class="capitalize mx-4 flex flex-col">
+              <a href={project.link}>
+                <h3 class="font-semibold hover:underline hover:underline-offset-2 md:text-4xl text-2xl">
+                  {project.title}
+                </h3>
+              </a>
+              <span class="font-normal md:text-xl text-lg ">{project.subTitle}</span>
+              <p class="md:text-sm text-base mt-5">{project.about}</p>
+            </div>
+          </section>
+        );
+      })
+    }
+  </main>
+</Layout>

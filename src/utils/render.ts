@@ -17,7 +17,7 @@ function styleHtml(html: string) {
     )
     .replaceAll(
       "<pre>",
-      '<pre class="bg-gray-50 dark:bg-gray-800 p-2 rounded-md border-2 border-gray-200">'
+      '<pre class="bg-gray-50 overflow-x-scroll text-sm md:text-lg dark:bg-gray-800 p-2 rounded-md border-2 border-gray-200">'
     );
 }
 
