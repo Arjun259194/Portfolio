@@ -1,3 +1,8 @@
+export interface Contact {
+  link: string;
+  QRCodeImage: string;
+  platformName: string;
+}
 
 export interface Project {
   title: string;

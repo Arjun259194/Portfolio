@@ -1,0 +1,30 @@
+---
+import { Contact } from "../utils/types";
+
+interface Props extends Contact {}
+
+const { QRCodeImage, link, platformName } = Astro.props;
+---
+
+<section class="flex even:flex-row-reverse gap-4 p-5 justify-between w-10/12 mx-auto">
+  <div
+    class="min-w-[40%] py-2 space-y-4 flex flex-col items-center rounded-md justify-between">
+    <img
+      class="shadow-comic-light dark:shadow-comic-dark rounded-md border-2 border-black aspect-square"
+      src={QRCodeImage}
+      alt=""
+    />
+    <span class="italic font-bold capitalize text-4xl">{platformName}</span>
+  </div>
+  <div class="w-full capitalize text-4xl">
+    <p class="my-5">
+      <slot />
+    </p>
+    <a target="_blank" href={link}>
+      <button
+        class="border-2 border-black shadow-comic-light dark:shadow-comic-dark px-8 text-center text-xl py-0.5 rounded-md"
+        >Go</button
+      >
+    </a>
+  </div>
+</section>
