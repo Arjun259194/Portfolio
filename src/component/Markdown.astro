@@ -1,12 +1,13 @@
 ---
-import { renderMarkdown } from "../utils/render";
+import MarkdownIt from "markdown-it";
 
 interface Props {
   content: string;
 }
 const { content } = Astro.props;
 
-const html = renderMarkdown(content);
+const md = new MarkdownIt();
+const html = md.render(content);
 ---
 
-<div class="space-y-4 w-9/12 mx-auto pt-5" set:html={html} />
+<div class="prose md:prose-lg lg:prose-xl] mx-auto my-5" set:html={html} />
