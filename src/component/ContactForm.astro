@@ -1,15 +1,23 @@
 <form
-  class="p-4 text-xl flex flex-col border-2 border-black shadow-comic-light dark:shadow-comic-dark"
+  class="p-4 text-2xl flex flex-col space-y-4 rounded-md my-5 border-2 border-black shadow-comic-light dark:shadow-comic-dark"
   action="https://formspree.io/f/mbjebney"
   method="POST">
-  <label>
-    Your email:
-    <input type="email" name="email" />
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
+  <div class="flex flex-col space-y-2">
+    <label class="capitalize"> Your email:</label>
+    <input
+      class="border-2 p-2 text-lg border-black rounded-md"
+      type="email"
+      name="email"
+    />
+  </div>
+  <div class="flex flex-col space-y-2">
+    <label class="capitalize"> Your message:</label>
+    <textarea class="border-2 p-2 text-lg border-black rounded-md" name="message"
+    ></textarea>
+  </div>
   <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <button
+    class="border-2 border-black text-lg hover:text-white hover:bg-black font-semibold rounded-md"
+    type="submit">Send</button
+  >
 </form>

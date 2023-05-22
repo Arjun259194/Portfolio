@@ -5,6 +5,40 @@ import Layout from "../layout/Layout.astro";
 
 <Layout title="contact">
   <main class="w-10/12 mx-auto flex flex-col">
-    <ContactForm />
+    <section class="w-full">
+      <div class="w-2/3 mx-auto">
+        <ContactForm />
+      </div>
+    </section>
+    <section class="w-full capitalize space-y-6 md:flex md:space-y-0 md:my-10">
+      <div class="text-center">
+        <img
+          class="aspect-square w-1/2 mx-auto"
+          src="/img/logos/twitter.png"
+          alt="whatsapp logo"
+        />
+        <p class="text-lg normal-case">You can follow me on twitter ✌🏼</p>
+        <a
+          href="https://twitter.com/arjun31690705"
+          target="_blank"
+          class="text-2xl font-semibold hover:underline focus:underline"
+          >Go check it out!</a
+        >
+      </div>
+      <div class="text-center">
+        <img
+          class="aspect-square w-1/2 mx-auto"
+          src="/img/logos/github.png"
+          alt="whatsapp logo"
+        />
+        <p class="text-lg normal-case">You can check out my projects on Github ⭐</p>
+        <a
+          href="https://github.com/Arjun259194"
+          target="_blank"
+          class="text-2xl font-semibold hover:underline focus:underline"
+          >Go check it out!</a
+        >
+      </div>
+    </section>
   </main>
 </Layout>

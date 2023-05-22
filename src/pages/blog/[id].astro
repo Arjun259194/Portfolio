@@ -19,7 +19,7 @@ const blog = await fetchBlog(id);
 ---
 
 <Layout title={blog.title}>
-  <main>
+  <main class="w-10/12 mx-auto">
     <Markdown content={blog.content} />
   </main>
 </Layout>
