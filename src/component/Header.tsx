@@ -21,20 +21,20 @@ const Header = () => {
         <ul
           className={`${
             menuOpen ? "opacity-100 -translate-y-0" : "opacity-0 -translate-y-full"
-          } overflow-hidden transition-all duration-200 ease-linear md:flex md:space-x-8 md:relative md:m-0 font-semibold absolute z-20 bg-white dark:bg-neutral-900 border-2 border-black dark:border-gray-100 shadow-comic-light dark:shadow-comic-dark rounded-md top-0 right-0 m-12 capitalize text-gray-900 dark:text-gray-100`}>
-          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
+          } overflow-hidden transition-all duration-200 ease-linear md:flex md:space-x-8 md:relative md:m-0 font-semibold absolute z-20 bg-white  border-2 border-black  shadow-comic-light  rounded-md top-0 right-0 m-12 capitalize text-gray-900 `}>
+          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900   text-lg">
             <a href="/">Home</a>
           </li>
-          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
+          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900   text-lg">
             <a href="/about">about</a>
           </li>
-          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
+          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900   text-lg">
             <a href="/blog">blog</a>
           </li>
-          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
+          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900   text-lg">
             <a href="/project">project</a>
           </li>
-          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">
+          <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900   text-lg">
             <a href="/contact">contact</a>
           </li>
           {/* <li className="px-4 py-1 hover:bg-blue-700 md:hover:bg-transparent hover:text-white md:hover:text-gray-900 dark:md:hover:text-gray-100  text-lg">

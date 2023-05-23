@@ -1,0 +1,55 @@
+---
+const hobbies: {
+  title: string;
+  content: string;
+}[] = [
+  {
+    title: "Music",
+    content:
+      "I find immense pleasure in exploring various music genres and discovering new artists. From soothing melodies to catchy beats, music allows me to escape, unwind, and embrace different emotions.",
+  },
+  {
+    title: "Gaming",
+    content:
+      "During my leisure time, I enjoy immersing myself in games that offer captivating stories and engaging gameplay. It's a fun way to unwind and be part of exciting virtual worlds",
+  },
+  {
+    title: "Reading",
+    content:
+      "I have a deep love for literature in all its forms. Whether it's books, mangas, web comics, or graphic novels, reading allows me to explore diverse stories, expand my imagination, and gain new perspectives.",
+  },
+  {
+    title: "Movies/Shows",
+    content:
+      "Watching movies and shows is a favorite pastime of mine. I gravitate towards action-adventure and comedy genres, finding entertainment and inspiration in cinematic experiences. Anime, particularly One Piece, holds a special place in my heart.  ",
+  },
+  {
+    title: "Gym",
+    content:
+      "I prioritize my physical well-being by regularly hitting the gym. Working out helps me stay fit, active, and maintain a healthy lifestyle. It's a simple yet effective way to keep my body strong and energized.",
+  },
+];
+---
+
+<section class="w-10/12 md:w-8/12 mx-auto space-y-5">
+  <h2 class="text-5xl capitalize font-semibold">Hobbies</h2>
+  <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+    These hobbies offer a perfect balance of relaxation, entertainment, and personal
+    growth. They provide outlets for self-expression and help me maintain a healthy
+    work-life balance.
+  </p>
+  <div class="space-y-6">
+    {
+      hobbies.map(hobbie => {
+        return (
+          <div class="space-y-1">
+            <h3 class="text-4xl capitalize font-semibold">{hobbie.title}</h3>
+            <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+              {hobbie.content}
+            </p>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
